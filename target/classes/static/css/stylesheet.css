@@ -1,0 +1,19 @@
+
+body {background-color: lightblue;}
+ .btn-group-lg{margin: 2em 0em;}
+ .row{margin-bottom: 2em;}
+
+.form-control-lg{margin-bottom: 1em}
+.btn-lg{margin-bottom: 1em}
+
+
+/* to enlarge photos on hover */
+
+img {
+	border: 5px solid #555; 
+    transition:transform 0.25s ease;
+}
+img:hover {
+    -webkit-transform:scale(1.5);
+    transform:scale(2);
+}	
