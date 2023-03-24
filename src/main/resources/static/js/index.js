@@ -44,8 +44,8 @@ if (marsSol != null && marsSol != '' && marsSol >= 0) {
 }
 
 function highlightBtnByRoverType (roverType) {
-	if (roverType == '') 
-		roverType = 'Opportunity'
+	/*if (roverType == '') 
+		roverType = 'Opportunity' */
 	
 	document.getElementById('marsApi'+roverType).classList.remove('btn-secondary')
 	document.getElementById('marsApi'+roverType).classList.add('btn-primary')
