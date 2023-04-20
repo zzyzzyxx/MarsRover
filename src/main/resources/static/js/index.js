@@ -34,6 +34,14 @@ function getUrlParameter(name) {
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
 
+      function toggleHoverWindow() {
+        var x = document.getElementById("hover-window");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }}
+
 let marsRoverType = document.getElementById('marsApiRoverData').value
 		
 highlightBtnByRoverType(marsRoverType)
