@@ -58,4 +58,25 @@ function highlightBtnByRoverType (roverType) {
 	document.getElementById('marsApi'+roverType).classList.remove('btn-secondary')
 	document.getElementById('marsApi'+roverType).classList.add('btn-primary')
 }
+// added code
+function changeLanguageToPolish() {
+  // Change text content
+  document.getElementById("welcome").textContent = "Witaj w <b>Mars Rover API</b>";
+  document.getElementById("createdBy").textContent = "przez Sebastiana Wróbla (2022)";
+  document.getElementById("consultation").textContent = "na konsultacji Trevor Page'a (<a th:href=\"@{http://www.CodersCampus.com}\" target=\"blank\">CodersCampus.com</a>)";
+  
+  // Change button text
+  document.getElementById("languageButton").textContent = "ENGLISH";
+  document.getElementById("languageButton").onclick = changeLanguageToEnglish;
+}
 
+function changeLanguageToEnglish() {
+  // Change text content
+  document.getElementById("welcome").textContent = "Welcome to the <b>Mars Rover API</b>";
+  document.getElementById("createdBy").textContent = "by Sebastian Wrobel (2022)";
+  document.getElementById("consultation").textContent = "upon Trevor Page's (<a th:href=\"@{http://www.CodersCampus.com}\" target=\"blank\">CodersCampus.com</a>) consultation.";
+
+  // Change button text
+  document.getElementById("languageButton").textContent = "POLISH";
+  document.getElementById("languageButton").onclick = changeLanguageToPolish;
+}
